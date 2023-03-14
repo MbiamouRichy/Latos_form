@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*=============================== VARIABLE ====================================*/
+/*============================================================================*/
+/*=============================== PLACEHOLDER ==============================*/
+/*==========================================================================*/
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main .div-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100vw;
+}
+
+/*------------------------------- Colonne du formulaire --------------------------*/
+main .div-col {
+  width: 50%;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
