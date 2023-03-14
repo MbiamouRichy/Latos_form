@@ -1,0 +1,22 @@
+{
+  "name": "latos_form",
+  "version": "1.0.0",
+  "description": "Formulaire de login realise par Mbiamou richy et designer par Latos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MbiamouRichy/Latos_form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MbiamouRichy/Latos_form/issues"
+  },
+  "homepage": "https://github.com/MbiamouRichy/Latos_form#readme",
+  "dependencies": {
+    "sass": "^1.59.2"
+  }
+}
