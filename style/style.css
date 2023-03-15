@@ -8,29 +8,107 @@
 /*============================================================================*/
 /*=============================== PLACEHOLDER ==============================*/
 /*==========================================================================*/
-main {
+.div-col .div-texte_bas, form .remember div, form .remember, .div-col .div-form .other {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-main .div-col {
+.div-form form, .div-col .div-form, main .div-col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lexend Deca";
+  font-size: 1.2rem;
 }
 
 main {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 }
-
-/*------------------------------- Colonne du formulaire --------------------------*/
 main .div-col {
   width: 50%;
+  height: 100%;
+  padding: 50px;
+  padding-bottom: 30px;
+  align-items: flex-start;
   justify-content: space-between;
+}
+
+/*============================= Colonne du formulaire =========================*/
+/*============================================================================*/
+.div-col .div-logo img {
+  width: auto;
+  height: auto;
+}
+
+.div-col .div-form {
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px;
+  width: 100%;
+}
+.div-col .div-form h1 {
+  font-size: 2rem;
+}
+.div-col .div-form .other {
+  width: 100%;
+  margin: 40px 0;
+}
+.div-col .div-form .other hr {
+  height: 2px;
+  width: 40%;
+}
+.div-col .div-form .other p {
+  margin: 0 20px;
+}
+
+.div-form form {
+  justify-content: center;
+  width: 100%;
+}
+.div-form form input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 7px;
+}
+.div-form form input[type=checkbox] {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+}
+.div-form form input[type=submit] {
+  background-color: rgb(17, 17, 54);
+  color: #fff;
+  border-color: rgb(17, 17, 54);
+  font-size: 1.2rem;
+}
+
+form .remember {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+form .remember div {
+  justify-content: space-between;
+}
+form .remember label, form .remember a {
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.div-col .div-texte_bas {
+  justify-content: center;
+  width: 100%;
+}
+.div-col .div-texte_bas p {
+  color: rgb(199, 202, 212);
+}
+.div-col .div-texte_bas a {
+  text-decoration: none;
+  color: rgb(17, 17, 54);
 }/*# sourceMappingURL=style.css.map */

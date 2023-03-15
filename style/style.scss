@@ -6,7 +6,8 @@
 /*=============================== VARIABLE ====================================*/
 /*============================================================================*/
 $color1: rgb(17,17,54);
-
+$color2: rgb(199,202,212);
+$color3: #fff;
 /*=============================== PLACEHOLDER ==============================*/
 /*==========================================================================*/
 %div-row {
@@ -21,18 +22,103 @@ $color1: rgb(17,17,54);
 }
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lexend Deca";
+  font-size: 1.2rem;
 }
 main{
-  height: 100%;
+  height: 100vh;
   width: 100vw;
-  @extend %div-row;
-}
-/*------------------------------- Colonne du formulaire --------------------------*/
-main{
   .div-col{
     width: 50%;
+    height: 100%;
+    padding: 50px;
+    padding-bottom: 30px;
     @extend %div-col;
+    align-items: flex-start;
     justify-content: space-between;
+  }
+}
+
+/*============================= Colonne du formulaire =========================*/
+/*============================================================================*/
+
+.div-col{
+  .div-logo{
+    img{
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.div-col{
+  .div-form{
+    @extend %div-col;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+    width: 100%;
+    h1{
+      font-size: 2rem;
+    }
+    .other{
+      width: 100%;
+      @extend %div-row;
+      margin: 40px 0;
+      hr{
+        height: 2px;
+        width: 40%;
+      }
+      p{
+        margin:  0 20px
+      }
+    }
+  }
+}
+.div-form form{
+  @extend %div-col;
+  justify-content: center;
+  width: 100%;
+  input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 7px;
+  }
+  input[type="checkbox"]{
+    margin: 0;
+    height: 20px;
+    width: 20px;
+  }
+  input[type="submit"]{
+    background-color: $color1;
+    color: $color3;
+    border-color: $color1;
+    font-size: 1.2rem
+  }
+}
+form .remember{
+  @extend %div-row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+  div{
+    @extend %div-row;
+    justify-content: space-between;
+  }
+  label,a{
+    text-decoration: none;
+    line-height: 20px;
+  }
+}
+.div-col .div-texte_bas{
+  @extend %div-row;
+  justify-content: center;
+  width: 100%;
+  p{
+    color: $color2;
+  }
+  a{
+    text-decoration: none;
+    color: $color1;
   }
 }
