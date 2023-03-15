@@ -61,16 +61,12 @@ main{
     width: 100%;
     h1{
       font-size: 2rem;
-      animation: opacity 0.5s ease-in forwards;
     }
-    p{
-      animation: opacity 0.5 ease-in forwards;
-    }
+
     .other{
       width: 100%;
       @extend %div-row;
       margin: 40px 0px;
-      animation: opacity 0.5 ease-in forwards;
 
       hr{
         height: 2px;
@@ -86,7 +82,6 @@ main{
 #gSignInWrapper{
   width: 100%;
   margin-top: 40px;
-  animation: opacity 0.5 ease-in forwards;
 
 }
 #customBtn {
@@ -113,17 +108,19 @@ svg{
   @extend %div-col;
   justify-content: center;
   width: 100%;
+}
+.div-form form{
   input{
     width: 100%;
     height: 40px;
     margin-bottom: 20px;
     border-radius: 7px;
+    font-size: 1.2rem;
   }
   input[type="checkbox"]{
     margin: 0;
     height: 20px;
     width: 20px;
-    animation: opacity 0.5 ease-in forwards;
 
   }
   input[type="submit"]{
@@ -131,7 +128,6 @@ svg{
     color: $color3;
     border-color: $color1;
     font-size: 1.2rem;
-    animation: opacity 0.5 ease-in forwards;
 
   }
 }
@@ -140,7 +136,6 @@ form .remember{
   justify-content: space-between;
   width: 100%;
   margin-bottom: 40px;
-  animation: opacity 0.5 ease-in forwards;
 
   .div-remember{
     @extend %div-row;
@@ -157,7 +152,6 @@ form .remember{
   @extend %div-row;
   justify-content: center;
   width: 100%;
-  animation: opacity 0.5 ease-in forwards;
 
   p{
     color: $color2;
@@ -174,8 +168,6 @@ div.div-video{
   background-color: $color4;
   align-items: center;
   justify-content: center;
-  animation: appear 0.5 ease-in forwards;
-
 }
 
 /*=============================== Responsive =============================*/
@@ -260,21 +252,3 @@ body{
   }
 }
 
-/*============================== Animation ===========================*/
-/*====================================================================*/
-@keyframes opacity {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-@keyframes appear {
-  from{
-    transform: scale(0);
-  }
-  to{
-    transform: scale(1);
-  }
-}

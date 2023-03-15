@@ -22,3 +22,12 @@ var googleUser = {};
          //  alert(JSON.stringify(error, undefined, 2));
         });
   }
+
+  // la video
+  var input = document.querySelectorAll('input');
+  var video = document.querySelector('video')
+  input.forEach(inp => {
+    inp.addEventListener('keydown', ()=>{
+       video.play();
+    })
+  })

@@ -53,15 +53,10 @@ main .div-col {
 }
 .div-col .div-form h1 {
   font-size: 2rem;
-  animation: opacity 0.5s ease-in forwards;
-}
-.div-col .div-form p {
-  animation: opacity 0.5 ease-in forwards;
 }
 .div-col .div-form .other {
   width: 100%;
   margin: 40px 0px;
-  animation: opacity 0.5 ease-in forwards;
 }
 .div-col .div-form .other hr {
   height: 2px;
@@ -75,7 +70,6 @@ main .div-col {
 #gSignInWrapper {
   width: 100%;
   margin-top: 40px;
-  animation: opacity 0.5 ease-in forwards;
 }
 
 #customBtn {
@@ -104,31 +98,30 @@ svg {
   justify-content: center;
   width: 100%;
 }
+
 .div-form form input {
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
   border-radius: 7px;
+  font-size: 1.2rem;
 }
 .div-form form input[type=checkbox] {
   margin: 0;
   height: 20px;
   width: 20px;
-  animation: opacity 0.5 ease-in forwards;
 }
 .div-form form input[type=submit] {
   background-color: rgb(17, 17, 54);
   color: #fff;
   border-color: rgb(17, 17, 54);
   font-size: 1.2rem;
-  animation: opacity 0.5 ease-in forwards;
 }
 
 form .remember {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 40px;
-  animation: opacity 0.5 ease-in forwards;
 }
 form .remember .div-remember label {
   margin-left: 10px;
@@ -141,7 +134,6 @@ form .remember label, form .remember a {
 .div-col .div-texte_bas {
   justify-content: center;
   width: 100%;
-  animation: opacity 0.5 ease-in forwards;
 }
 .div-col .div-texte_bas p {
   color: rgb(199, 202, 212);
@@ -157,7 +149,6 @@ div.div-video {
   background-color: rgb(251, 245, 246);
   align-items: center;
   justify-content: center;
-  animation: appear 0.5 ease-in forwards;
 }
 
 /*=============================== Responsive =============================*/
@@ -232,23 +223,5 @@ div.div-video {
   }
   main .div-col .div-form h1 {
     font-size: 1.5rem;
-  }
-}
-/*============================== Animation ===========================*/
-/*====================================================================*/
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes appear {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
   }
 }/*# sourceMappingURL=style.css.map */
