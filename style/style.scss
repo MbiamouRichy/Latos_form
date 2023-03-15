@@ -61,11 +61,17 @@ main{
     width: 100%;
     h1{
       font-size: 2rem;
+      animation: opacity 0.5s ease-in forwards;
+    }
+    p{
+      animation: opacity 0.5 ease-in forwards;
     }
     .other{
       width: 100%;
       @extend %div-row;
       margin: 40px 0px;
+      animation: opacity 0.5 ease-in forwards;
+
       hr{
         height: 2px;
         width: 45%;
@@ -79,7 +85,9 @@ main{
 /*------------------------ button log in with google -----------------*/
 #gSignInWrapper{
   width: 100%;
-  margin-top: 40px
+  margin-top: 40px;
+  animation: opacity 0.5 ease-in forwards;
+
 }
 #customBtn {
   @extend %div-row;
@@ -115,12 +123,16 @@ svg{
     margin: 0;
     height: 20px;
     width: 20px;
+    animation: opacity 0.5 ease-in forwards;
+
   }
   input[type="submit"]{
     background-color: $color1;
     color: $color3;
     border-color: $color1;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    animation: opacity 0.5 ease-in forwards;
+
   }
 }
 form .remember{
@@ -128,6 +140,8 @@ form .remember{
   justify-content: space-between;
   width: 100%;
   margin-bottom: 40px;
+  animation: opacity 0.5 ease-in forwards;
+
   .div-remember{
     @extend %div-row;
     label{
@@ -143,6 +157,8 @@ form .remember{
   @extend %div-row;
   justify-content: center;
   width: 100%;
+  animation: opacity 0.5 ease-in forwards;
+
   p{
     color: $color2;
   }
@@ -158,6 +174,8 @@ div.div-video{
   background-color: $color4;
   align-items: center;
   justify-content: center;
+  animation: appear 0.5 ease-in forwards;
+
 }
 
 /*=============================== Responsive =============================*/
@@ -239,5 +257,24 @@ body{
         font-size: 1.5rem;
       }
     }
+  }
+}
+
+/*============================== Animation ===========================*/
+/*====================================================================*/
+@keyframes opacity {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
   }
 }

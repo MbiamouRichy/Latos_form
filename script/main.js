@@ -22,12 +22,3 @@ var googleUser = {};
          //  alert(JSON.stringify(error, undefined, 2));
         });
   }
-
-  // la video
-
-  let video = document.querySelector('video');
-video.addEventListener('playing', ()=> {
-  if(video.ended){
-    video.play()
-  }
-})
