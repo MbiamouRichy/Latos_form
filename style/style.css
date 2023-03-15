@@ -63,6 +63,7 @@ main .div-col {
 .div-col .div-form .other hr {
   height: 2px;
   width: 45%;
+  animation: hr 1s ease forwards;
 }
 .div-col .div-form .other p {
   margin: 0 20px;
@@ -72,6 +73,8 @@ main .div-col {
 #gSignInWrapper {
   width: 100%;
   margin-top: 40px;
+  position: relative;
+  animation: top-anim 1s ease forwards;
 }
 
 #customBtn {
@@ -107,6 +110,7 @@ svg {
   margin-bottom: 20px;
   border-radius: 7px;
   font-size: 1.2rem;
+  animation: scale 1s ease forwards;
 }
 .div-form form input[type=checkbox] {
   margin: 0;
@@ -151,6 +155,7 @@ div.div-video {
   background-color: rgb(251, 245, 246);
   align-items: center;
   justify-content: center;
+  animation: scale 1s ease forwards;
 }
 
 /*=============================== Responsive =============================*/
@@ -225,5 +230,30 @@ div.div-video {
   }
   main .div-col .div-form h1 {
     font-size: 1.5rem;
+  }
+}
+/*============================== ANIMATION ==========================*/
+@keyframes hr {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 45%;
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes top-anim {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
