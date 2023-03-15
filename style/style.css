@@ -8,7 +8,7 @@
 /*============================================================================*/
 /*=============================== PLACEHOLDER ==============================*/
 /*==========================================================================*/
-.div-col .div-texte_bas, form .remember div, form .remember, .div-col .div-form .other {
+.div-col .div-texte_bas, form .remember .div-remember, form .remember, #customBtn, .div-col .div-form .other, main {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,14 +56,42 @@ main .div-col {
 }
 .div-col .div-form .other {
   width: 100%;
-  margin: 40px 0;
+  margin: 40px 0px;
 }
 .div-col .div-form .other hr {
   height: 2px;
-  width: 40%;
+  width: 45%;
 }
 .div-col .div-form .other p {
   margin: 0 20px;
+}
+
+/*------------------------ button log in with google -----------------*/
+#gSignInWrapper {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#customBtn {
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border: 2px solid rgb(17, 17, 54);
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+#customBtn:hover {
+  cursor: pointer;
+}
+
+svg {
+  margin: 0 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 .div-form form {
@@ -73,7 +101,7 @@ main .div-col {
 .div-form form input {
   width: 100%;
   height: 40px;
-  margin: 10px 0;
+  margin-bottom: 20px;
   border-radius: 7px;
 }
 .div-form form input[type=checkbox] {
@@ -93,8 +121,8 @@ form .remember {
   width: 100%;
   margin-bottom: 40px;
 }
-form .remember div {
-  justify-content: space-between;
+form .remember .div-remember label {
+  margin-left: 10px;
 }
 form .remember label, form .remember a {
   text-decoration: none;
@@ -111,4 +139,87 @@ form .remember label, form .remember a {
 .div-col .div-texte_bas a {
   text-decoration: none;
   color: rgb(17, 17, 54);
+}
+
+/*================================ Colonne de la video ===============================*/
+/*====================================================================================*/
+div.div-video {
+  background-color: rgb(251, 245, 246);
+  align-items: center;
+  justify-content: center;
+}
+
+/*=============================== Responsive =============================*/
+/*=======================================================================*/
+@media only screen and (max-width: 1276px) {
+  body {
+    font-size: 1.1rem;
+  }
+  .div-col .div-form {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1207px) {
+  .div-col .div-form {
+    padding: 0 30px;
+  }
+  .div-col .div-form h1 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1207px) {
+  .div-col .div-form {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 955px) {
+  .div-video video {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 892px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  div.div-video {
+    display: none;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  main .div-col {
+    width: 100%;
+  }
+  main .div-col .div-form {
+    padding: 0 30px;
+  }
+  main .div-col .div-form h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 534px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 474px) {
+  main .div-col {
+    padding: 30px;
+  }
+  main .div-col .div-form {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 0.9rem;
+  }
+  main .div-col {
+    padding: 10px;
+  }
+  main .div-col .div-form h1 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
